@@ -23,6 +23,7 @@ class FileTemplate
     <id>%addon_id%</id>
     <version>1.0.0</version>
     <priority>100</priority>
+    <status>active</status>
     <position>0</position>
     <default_language>%default_language%</default_language>
 </addon>
@@ -146,6 +147,7 @@ class ScriptParam
             $consoleParams = array_merge($consoleParamsWithShort, [
                 'help',
                 'wibug',
+                'lang'
             ]);
 
             $this->param = getopt( implode('', array_keys($consoleParams)), $consoleParams );
@@ -353,7 +355,6 @@ class Addon
       $id = $this->data['id'];
       $name = $id . '.po';
       $templates = FileTemplate::getTemplate('lang');
-      // WIFIXME: add firts symbol uppercase
       $addon_name = ucfirst(str_replace('_', ' ', $id));
       $addon_description = '';
 

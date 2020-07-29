@@ -16,7 +16,7 @@ php ./create_addon.php --addon=super_test_addon
 Copy create_addon.php in the CS-Cart root directory
 
 
-#### Params
+### Params
 
 ##### Browser
 Request params:
