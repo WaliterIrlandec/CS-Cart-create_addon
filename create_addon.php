@@ -22,6 +22,7 @@ class FileTemplate
 <addon scheme="3.0">
     <id>%addon_id%</id>
     <version>1.0.0</version>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
     <priority>100</priority>
     <status>active</status>
     <position>0</position>
